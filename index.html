@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <title>CloudShelf</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+
+
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a href="#" class="navbar-brand d-flex align-items-center" id="logo-link">
+                <!-- <img src="images/cloud.png" alt="CloudShelf Logo" id="site-logo" /> -->
+                <span id="site-title" class="ms-2">CloudShelf</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation" id="navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto" id="nav-links-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link" id="nav-home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link" id="nav-home">About</a>
+                    </li> 
+                    
+                    <li class="nav-item">
+                        <a href="#explore-genres" class="nav-link" id="nav-home">Genres</a>
+                    </li>  
+
+                    <li class="nav-item">
+                        <a href="#top-books-section" class="nav-link" id="nav-home">Top Picks</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#your-section-id" class="nav-link" id="nav-home">New Releases</a>
+                    </li> 
+
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link" id="nav-home">Contact</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      More
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="moreDropdown">
+                        <li><a class="dropdown-item" href="#benefits">Benefits</a></li>
+                        <li><a class="dropdown-item" href="#author">Author of the Week</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="nav-item">
+                      <div class="toggle-wrapper">
+                        <input type="checkbox" class="checkbox" id="theme-toggle">
+                        <label for="theme-toggle" class="checkbox-label">
+                          <i class="fas fa-moon"></i>
+                          <i class="fas fa-sun"></i>
+                          <span class="ball"></span>
+                        </label>
+                      </div>
+                    </li>
+
+                    <li class="nav-item ms-3">
+                      <a href="#" class="nav-link" id="search-icon" title="Search">
+                        <i class="fas fa-search"></i>
+                      </a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel Section -->
+<section id="hero-section" class="hero-carousel">
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+    <div class="carousel-inner">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active" id="slide-top-picks">
+        <img src="images/hero--1.jpeg" class="d-block w-100 hero-image" alt="Top Book Picks">
+        <div class="carousel-caption d-none d-md-block hero-caption">
+          <h2 class="hero-title">Discover Our Top Book Picks</h2>
+          <p class="hero-subtext">Curated favorites to ignite your imagination.</p>
+          <a href="#top-books-section" class="teal-glow-button" aria-label="Explore Top Picks">Explore Top Picks</a>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item" id="slide-new-arrivals">
+        <img src="images/hero--2.jpeg" class="d-block w-100 hero-image" alt="New Arrivals">
+        <div class="carousel-caption d-none d-md-block hero-caption">
+          <h2 class="hero-title">Fresh Arrivals Just for You</h2>
+          <p class="hero-subtext">Stay ahead with the latest releases.</p>
+          <a href="#your-section-id" class="teal-glow-button" aria-label="Browse New Releases">Browse New Releases</a>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item" id="slide-genres">
+        <img src="images/hero--3.jpeg" class="d-block w-100 hero-image" alt="Browse Genres">
+        <div class="carousel-caption d-none d-md-block hero-caption">
+          <h2 class="hero-title">Find Your Next Favorite Genre</h2>
+          <p class="hero-subtext">Adventure, mystery, romance, and more.</p>
+          <a href="#explore-genres" class="teal-glow-button" aria-label="Browse Genres">Browse Genres</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Previous Slide">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Next Slide">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+</section>
+
+<section class="section about" id="about" aria-label="About Us">
+  <div class="container">
+    <div class="about-content">
+      <p class="section-subtitle">Where Books Meet Passion</p>
+
+      <h1 class="h1 about-title">Empowering Readers. Connecting Minds.</h1>
+
+      <p class="section-text">
+        At CloudShelf, our mission is to inspire and connect book lovers across the world by offering curated recommendations, diverse genres, and a vibrant reading community.
+      </p>
+    </div>
+
+    <div class="about-banner has-before">
+      <img src="images/about.jpg" width="431" height="596"
+        alt="CloudShelf About Us Banner" class="w-100 img-cover">
+    </div>
+
+  </div>
+</section>
+
+<section class="section-benefits" id="benefits" aria-label="Why choose CloudShelf">
+  <div class="container">
+
+    <ul class="grid-list">
+
+      <li class="benefits-content">
+        <h2 class="h2 section-title">Why Choose CloudShelf?</h2>
+        <p class="section-text">
+          Discover new books, explore your favorite genres, and get personalized recommendations all in one place.
+        </p>
+
+      </li>
+      
+      <li>
+        <div class="benefits-card has-before has-after">
+          <div class="card-icon">
+            <img src="images/benefit-5.png" width="40" height="40" loading="lazy" alt="Our Mission">
+          </div>
+          <h3 class="h3 card-title">About Us</h3>
+          <p class="card-text">
+            Our mission is to inspire and connect readers worldwide by providing access to quality books and fostering a welcoming space for literary exploration.
+          </p>
+          <a href="#about" class="btn-link">
+            <span class="span">Read more ></span>
+            <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+          </a>
+        </div>
+      </li>
+
+      <li>
+        <div class="benefits-card has-before has-after">
+
+          <div class="card-icon">
+            <img src="images/benefit-1.png" width="40" height="40" loading="lazy" alt="Discover New Books">
+          </div>
+
+          <h3 class="h3 card-title">Discover New Books</h3>
+
+          <p class="card-text">
+            Find the latest and most exciting books across various genres, carefully curated to keep your reading list fresh and engaging all year round.
+          </p>
+
+          <a href="#your-section-id" class="btn-link" aria-label="Browse New Releases">
+            <span class="span">Browse Now ></span>
+            <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+          </a>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="benefits-card has-before has-after">
+
+          <div class="card-icon">
+            <img src="images/benefit-2.png" width="40" height="40" loading="lazy" alt="Explore Genres">
+          </div>
+
+          <h3 class="h3 card-title">Explore Genres</h3>
+
+          <p class="card-text">
+            Dive into a wide range of genres from mystery and romance to fiction and biographies, something perfect for every type of reader.
+          </p>
+
+          <a href="#explore-genres" class="btn-link" aria-label="Browse Genres">
+            <span class="span">Explore Genres ></span>
+            <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+          </a>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="benefits-card has-before has-after">
+
+          <div class="card-icon">
+            <img src="images/benefit-3.png" width="40" height="40" loading="lazy" alt="Get Recommendations">
+          </div>
+
+          <h3 class="h3 card-title">Top Books of All Time</h3>
+
+          <p class="card-text">
+            Explore top-rated books loved by readers around the world, timeless classics, modern favorites, and must-reads curated just for you.
+          </p>
+
+          <a href="#top-books-section" class="btn-link" aria-label="See Recommendations">
+            <span class="span">See Recommendations ></span>
+            <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+          </a>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="benefits-card has-before has-after">
+
+          <div class="card-icon">
+            <img src="images/benefit-6.png" width="40" height="40" loading="lazy" alt="Join Community">
+          </div>
+
+          <h3 class="h3 card-title">Talk to Us!</h3>
+
+          <p class="card-text">
+            Got a favorite book? A random thought? A meme to share? Don’t be shy—our inbox is always open.
+          </p>
+
+          <a href="#contact" class="btn-link" aria-label="Join Community">
+            <span class="span">Write Us Now ></span>
+            <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+          </a>
+
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="custom-section" id="search-books-section" aria-label="Search Books">
+  <div class="container">
+    <p class="section-subtitle">Search</p>
+    <h2 class="section-title has-underline">
+      Search for a Book
+      <span class="span has-before"></span>
+    </h2>
+
+    <form id="book-search-form" class="d-flex" role="search" onsubmit="handleSearch(event)">
+      <input
+        type="search"
+        id="book-search-input"
+        class="form-control me-2"
+        placeholder="Enter book title, author, or keyword"
+        aria-label="Search Books"
+        required
+      />
+      <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+
+    <div id="search-results" style="margin-top: 1rem;"></div>
+  </div>
+</section>
+
+
+<section class="custom-section" id="your-section-id">
+  <div class="container">
+    <p class="section-subtitle">Explore</p>
+    <h2 class="section-title has-underline">
+      New Book Releases
+      <span class="span has-before"></span>
+    </h2>
+
+    <div class="choose">
+      <a href="#list-th" id="listViewBtn" title="List View">
+        <i class="fa fa-th-list" aria-hidden="true"></i>
+      </a>
+      <a href="#large-th" id="gridViewBtn" title="Grid View" class="active">
+        <i class="fa fa-th-large" aria-hidden="true"></i>
+      </a>
+    </div>
+
+    <div id="large-th" class="book-view active">
+      <ul id="book-grid" class="gallery-list"></ul>
+    </div>
+
+    <div id="list-th" class="book-view">
+      <div id="book-list" class="book-list"></div>
+    </div>
+   <div class="pagination-buttons">
+  <button id="book-prev-1">Previous</button>
+  <button id="book-next-1">Next</button>
+</div>
+ 
+  </div>
+</section>
+<section class="custom-section" id="explore-genres">
+  <div class="container">
+    <p class="section-subtitle">Explore</p>
+    <h2 class="section-title has-underline">
+      Explore Genres
+      <span class="span has-before"></span>
+    </h2>
+    <!-- View toggle buttons with unique IDs for genre -->
+    <div class="choose">
+      <a href="#genre-list-th" id="genreListViewBtn" title="List View">
+        <i class="fa fa-th-list" aria-hidden="true"></i>
+      </a>
+      <a href="#genre-large-th" id="genreGridViewBtn" title="Grid View" class="active">
+        <i class="fa fa-th-large" aria-hidden="true"></i>
+      </a>
+    </div>
+<div class="choose">
+        <select id="genre-select" aria-label="Select Genre">
+            <option value="">Choose a Genre...</option>
+            
+            <!-- Action & Adventure -->
+            <optgroup label="Action & Adventure">
+                <option value="action_and_adventure">Action & Adventure</option>
+                <option value="espionage">Espionage</option>
+                <option value="survival">Survival</option>
+                <option value="war">War Stories</option>
+            </optgroup>
+            
+            <!-- Animals & Nature -->
+            <optgroup label="Animals & Nature">
+                <option value="animals">Animals</option>
+                <option value="environment">Environment</option>
+                <option value="nature">Nature</option>
+                <option value="pets">Pets</option>
+            </optgroup>
+            
+            <!-- Arts & Culture -->
+            <optgroup label="Arts & Culture">
+                <option value="architecture">Architecture</option>
+                <option value="art">Art</option>
+                <option value="design">Design</option>
+                <option value="film">Film & Cinema</option>
+                <option value="music">Music</option>
+                <option value="photography">Photography</option>
+            </optgroup>
+            
+            <!-- Children's Books -->
+            <optgroup label="Children's Books">
+                <option value="bedtime_stories">Bedtime Stories</option>
+                <option value="children">Children's Books</option>
+                <option value="educational_children">Educational</option>
+                <option value="picture_books">Picture Books</option>
+            </optgroup>
+            
+            <!-- Health & Lifestyle -->
+            <optgroup label="Health & Lifestyle">
+                <option value="cooking">Cooking</option>
+                <option value="fitness">Fitness & Exercise</option>
+                <option value="health">Health & Wellness</option>
+                <option value="meditation">Meditation</option>
+                <option value="mental_health">Mental Health</option>
+                <option value="nutrition">Nutrition</option>
+            </optgroup>
+            
+            <!-- Horror & Supernatural -->
+            <optgroup label="Horror & Supernatural">
+                <option value="gothic">Gothic</option>
+                <option value="horror">Horror</option>
+                <option value="paranormal">Paranormal</option>
+                <option value="supernatural">Supernatural</option>
+            </optgroup>
+            
+            <!-- Humor & Entertainment -->
+            <optgroup label="Humor & Entertainment">
+                <option value="comics">Comics</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="humor">Humor</option>
+                <option value="satire">Satire</option>
+            </optgroup>
+            
+            <!-- Literature & Poetry -->
+            <optgroup label="Literature & Poetry">
+                <option value="literature">Classic Literature</option>
+                <option value="literary_fiction">Literary Fiction</option>
+                <option value="plays">Plays & Drama</option>
+                <option value="poetry">Poetry</option>
+                <option value="short_stories">Short Stories</option>
+            </optgroup>
+            
+            <!-- Most Popular -->
+            <optgroup label="Most Popular">
+                <option value="fantasy">Fantasy</option>
+                <option value="fiction">Fiction</option>
+                <option value="historical_fiction">Historical Fiction</option>
+                <option value="mystery_and_detective_stories">Mystery & Detective</option>
+                <option value="romance">Romance</option>
+                <option value="science_fiction">Science Fiction</option>
+                <option value="thriller">Thriller</option>
+                <option value="young_adult">Young Adult</option>
+            </optgroup>
+            
+            <!-- Non-Fiction -->
+            <optgroup label="Non-Fiction">
+                <option value="biographies">Biographies</option>
+                <option value="business">Business</option>
+                <option value="history">History</option>
+                <option value="politics">Politics</option>
+                <option value="psychology">Psychology</option>
+                <option value="self_help">Self-Help</option>
+            </optgroup>
+            
+            <!-- Religion & Spirituality -->
+            <optgroup label="Religion & Spirituality">
+                <option value="buddhism">Buddhism</option>
+                <option value="christianity">Christianity</option>
+                <option value="islam">Islam</option>
+                <option value="philosophy">Philosophy</option>
+                <option value="religion">Religion</option>
+                <option value="spirituality">Spirituality</option>
+            </optgroup>
+            
+            <!-- Romance -->
+            <optgroup label="Romance">
+                <option value="contemporary_romance">Contemporary Romance</option>
+                <option value="romance">General Romance</option>
+                <option value="historical_romance">Historical Romance</option>
+                <option value="paranormal_romance">Paranormal Romance</option>
+                <option value="romantic_comedy">Romantic Comedy</option>
+            </optgroup>
+            
+            <!-- Science & Technology -->
+            <optgroup label="Science & Technology">
+                <option value="biology">Biology</option>
+                <option value="chemistry">Chemistry</option>
+                <option value="computer_science">Computer Science</option>
+                <option value="mathematics">Mathematics</option>
+                <option value="physics">Physics</option>
+                <option value="programming">Programming</option>
+                <option value="science">Science</option>
+            </optgroup>
+            
+            <!-- Travel & Geography -->
+            <optgroup label="Travel & Geography">
+                <option value="anthropology">Anthropology</option>
+                <option value="cultural_studies">Cultural Studies</option>
+                <option value="geography">Geography</option>
+                <option value="travel">Travel</option>
+            </optgroup>
+        </select>
+    </div>
+
+    <div id="genre-large-th" class="book-view active">
+      <ul id="genre-grid" class="gallery-list"></ul>
+    </div>
+
+    <div id="genre-list-th" class="book-view">
+      <div id="genre-list" class="book-list"></div>
+    </div>
+
+    <div id="genre-loading" style="display:none; text-align:center; margin: 1rem 0; font-style: italic;">
+      Loading books...
+    </div>
+       <div class="pagination-buttons">
+  <button id="book-prev-2">Previous</button>
+  <button id="book-next-2">Next</button>
+</div>
+  </div>
+</section>
+
+<section class="custom-section" id="top-books-section">
+  <div class="container">
+    <p class="section-subtitle">Explore</p>
+    <h2 class="section-title has-underline">
+      Top Books
+      <span class="span has-before"></span>
+    </h2>
+
+    <div class="choose">
+      <a href="#top-list-th" id="topListViewBtn" title="List View">
+        <i class="fa fa-th-list" aria-hidden="true"></i>
+      </a>
+      <a href="#top-large-th" id="topGridViewBtn" title="Grid View" class="active">
+        <i class="fa fa-th-large" aria-hidden="true"></i>
+      </a>
+    </div>
+
+    <div id="top-large-th" class="book-view active">
+      <ul id="top-book-grid" class="gallery-list"></ul>
+    </div>
+
+    <div id="top-list-th" class="book-view">
+      <div id="top-book-list" class="book-list"></div>
+    </div>
+       <div class="pagination-buttons">
+  <button id="book-prev-3">Previous</button>
+  <button id="book-next-3">Next</button>
+</div>
+  </div>
+</section>
+    <!-- Book Details Modal -->
+    <div id="book-modal" class="book-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modal-book-title">Book Details</h2>
+                <button class="close-btn" id="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-cover">
+                    <img id="modal-book-cover" src="" alt="Book Cover">
+                </div>
+                <div class="modal-details">
+                    <div class="modal-author" id="modal-book-author"></div>
+                    <div class="modal-info" id="modal-book-info"></div>
+                    <div class="modal-description" id="modal-book-description">
+                        <span class="loading-spinner"></span> Loading book details...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- 
+        - #AUTHOR
+      -->
+<section class="section author" id="author">
+  <div class="container">
+
+    <figure class="img-holder" style="--width: 700; --height: 720;">
+      <img src="images/Emily-Henry.jpeg"
+           width="700" height="720" loading="lazy" alt="Emily Henry" class="img-cover">
+    </figure>
+
+    <div class="author-content">
+
+      <p class="section-subtitle">Author Of The Week</p>
+      <h2 class="h2 section-title">Emily Henry</h2>
+      <p class="author-name">Style: Contemporary Romance & Women’s Fiction</p>
+
+      <div class="section-text">
+        Emily Henry is a <strong>New York Times</strong> bestselling author acclaimed for her emotionally resonant
+        romantic comedies. Her books—including <em>Beach Read</em>, <em>People We Meet on Vacation</em>,
+        <em>Book Lovers</em>, and <em>Happy Place</em>—combine clever wit, emotional depth, and introspective
+        storytelling. Her work explores the complexities of modern love, grief, and personal growth, earning her
+        both critical praise and a loyal fanbase. Emily’s ability to write tender yet hilarious fiction has redefined
+        what readers expect from the romance genre.
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+ <section class="contact-section" id="contact">
+        <p class="section-subtitle">Contact</p>
+        
+        <h2 class="section-title">Write me anything</h2>
+
+        <div class="wrapper">
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <input type="text" name="name" placeholder="Your Name" required class="input-field">
+                <input type="email" name="email" placeholder="Your Email" required class="input-field">
+                <input type="text" name="subject" placeholder="Subject" required class="input-field">
+                <textarea name="message" placeholder="Your Message" required class="input-field"></textarea>
+                <button type="submit" class="btn">Send Now</button>
+            </form>
+
+            <div class="contact-info">
+                <div class="info-item">
+                    <p class="info-title">Address:</p>
+                    <div class="info-content">
+                        Beirut<br>
+                        Lebanon
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <p class="info-title">Phone:</p>
+                    <div class="info-content">
+                        <a href="tel:1234567890">+961 76 160 399</a>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <p class="info-title">Email:</p>
+                    <div class="info-content">
+                        <a href="mailto:support@support.com">cloudshelf@support.com</a>
+                    </div>
+                </div>
+
+                <div class="info-item"> 
+<p class="social-title">Connect book socials</p>
+<div class="social-links">
+  <a href="https://www.facebook.com/BookRiot" class="social-link facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://twitter.com/goodreads" class="social-link twitter" title="Twitter"><i class="fab fa-twitter"></i></a>
+  <a href="https://www.linkedin.com/in/maria-fadel-58b4a22b5?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BjW5fgXRKRziCllfRcmsJQw%3D%3D" class="social-link linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+  <a href="https://www.youtube.com/@BooksAndLala" class="social-link youtube" title="YouTube"><i class="fab fa-youtube"></i></a>
+</div>
+
+        </div>
+    </section>
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <a href="#" class="logo">CloudShelf</a>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="index.html" class="footer-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="footer-link">About</a>
+          </li>
+
+          <li>
+            <a href="#benefits" class="footer-link">Benefits</a>
+          </li>
+
+          <li>
+            <a href="#explore-genres" class="footer-link">Genres</a>
+          </li>
+
+          <li>
+            <a href="#top-books-section" class="footer-link">Top Picks</a>
+          </li>
+
+          <li>
+            <a href="#your-section-id" class="footer-link">New Releases</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="footer-link">Contact</a>
+          </li>
+
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2025 All right reserved. Made with ❤ by Maria Fadel.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+<!-- Font Awesome CDN for icons -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+
+</html>
