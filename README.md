@@ -96,18 +96,6 @@ This ensures a clean and readable experience across desktop, tablet, and mobile 
 
 ---
 
-## 🗂️ Pages & Navigation
-
-CloudShelf includes at least three main pages:
-
-- **Home** (`index.html`)  
-- **Books** (`books.html`)  
-- **Contact** (`contact.html`)  
-
-A consistent navigation bar is displayed on all pages for easy routing. Navigation is implemented using standard anchor links (`<a href="...">`).
-
----
-
 ## 🧠 JavaScript Functionality
 
 All JavaScript is written using **ES6 class-based structure**. Core interactive features include:
