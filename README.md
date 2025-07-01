@@ -7,7 +7,7 @@
 ## Live Preview
 
 Check out the live version of this project here:  
-[CloudShelf Live Preview](https://your-username.github.io/cloudshelf/)
+[CloudShelf Live Preview](https://MariaFadell.github.io/cloudshelf/)
 
 ---
 ## 🔌 API Used  
