@@ -4,7 +4,12 @@
 **Maria Youssef Fadel**
 
 ---
+## Live Preview
 
+Check out the live version of this project here:  
+[CloudShelf Live Preview](https://your-username.github.io/cloudshelf/)
+
+---
 ## 🔌 API Used  
 This project uses the **Open Library API** to dynamically fetch rich book data including titles, covers, authors, and detailed descriptions.  
 🔗 [https://openlibrary.org/developers/api](https://openlibrary.org/developers/api)
